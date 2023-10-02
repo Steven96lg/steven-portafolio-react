@@ -1,0 +1,29 @@
+#menu-component{
+    width: 100%;
+    height: auto;
+}
+
+#menu-component nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-component nav ul li{
+    flex-grow: 1; /* Permitir que los elementos se expandan igualmente */
+    text-align: center;
+}
+
+#menu-component nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 1em; /* Puedes ajustar este valor según tus necesidades */
+    transition: background 500ms;
+    color: white;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu-component nav ul li a:hover{
+    background: rgba(255,255,255,.3);
+}

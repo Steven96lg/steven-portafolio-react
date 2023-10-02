@@ -1,0 +1,43 @@
+
+#show-articles-component{
+    color: white;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    & strong{
+        margin-bottom: 30px;
+        color: #FFC436;
+    }
+    & .articles-box{
+        padding: 10px;
+        cursor: pointer;
+        transition: backgronud 500ms;
+        margin-top: 20px;
+    }
+
+    & .show-article{
+        display: flex;
+        flex-direction: column;
+        transition: background 500ms;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 15px;
+        & strong{
+            color: white;
+        }
+        & a{
+            display: inline-block;
+            color: white;
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            transition: color 500ms;
+        }
+        & a:hover{
+            color: gray;
+        }
+    }
+
+    & .show-article:hover{
+        background: rgba(255,255,255,.1);
+    }
+}
