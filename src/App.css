@@ -5,3 +5,11 @@
     margin: 0px auto;
     padding: 50px 0px 0px;
 }
+
+@media (max-width: 415px){
+    #app{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}

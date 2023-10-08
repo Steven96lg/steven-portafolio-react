@@ -68,3 +68,15 @@
     }
 }
 
+@media (max-width: 415px){
+    #portafolio-component{
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .article-box{
+        padding: 20px;
+    }
+}

@@ -31,6 +31,7 @@
 
 #tech-component .skills-content .skills-box strong{
     font-size: 17px;
+    text-align: center;
 }
 
 .fs{
@@ -72,4 +73,18 @@
 
 #tech-component .skills-content .skills-box:nth-child(9):hover{
     background-color: rgba(255,255,255,.5);
+}
+
+@media (max-width: 415px){
+    #tech-component{
+        color: white;
+        padding: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+    }
+
+    .fs{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
 }

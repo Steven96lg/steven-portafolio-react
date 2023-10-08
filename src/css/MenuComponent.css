@@ -27,3 +27,30 @@
 #menu-component nav ul li a:hover{
     background: rgba(255,255,255,.3);
 }
+
+@media (max-width: 415px){
+
+    #menu-component{
+        margin-top: 20px;
+    }
+
+    #menu-component nav ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    #menu-component nav ul li{
+        flex-grow: inherit; /* Permitir que los elementos se expandan igualmente */
+        text-align: center;
+    }
+    
+    #menu-component nav ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 15px; /* Puedes ajustar este valor según tus necesidades */
+        transition: background 500ms;
+        color: white;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

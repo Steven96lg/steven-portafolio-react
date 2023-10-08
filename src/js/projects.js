@@ -95,7 +95,7 @@ export const Projects = [
         id: 3,
         title: 'Barandales ARH',
         img: BarandalesARH,
-        description: 'Proyecto en colaboración con un compañero desarrollador Backend, se realizaron los respectivos requerimientos del clientes, para brindarle un servicío de calidad.',
+        description: 'Proyecto en colaboración con un compañero desarrollador Backend, se realizaron los respectivos requerimientos del cliente, para brindarle un servicío de calidad.',
         link: 'https://www.barandalesarh.com.mx/',
         techs: [
             {

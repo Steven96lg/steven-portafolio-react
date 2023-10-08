@@ -11,7 +11,6 @@ export default function MenuComponent(){
                     <li><Link to="/">Sobre mi</Link></li>
                     <li><Link to="/techs">Tecnologias</Link></li>
                     <li><Link to="/portafolio">Portafolio</Link></li>
-                    <li><Link to="/articulos">Articulos</Link></li>
                 </ul>
             </nav>
         </div>
