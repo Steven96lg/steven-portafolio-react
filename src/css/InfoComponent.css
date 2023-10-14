@@ -59,8 +59,27 @@
 
 @media (max-width: 415px){
     #info-component{
-        padding: 0px 15px 0px;
+        padding: 0px 10px 0px;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
+    }
+
+    #info-component .links-component{
+        display: flex;
+        margin: 0px auto;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    #info-component .links-component .icons{
+        font-size: 40px;
+    }
+
+    #info-component .links-component .fa-link{
+        display: none;
+    }
+
+    #info-component .links-component span{
+        display: none;
     }
 }
