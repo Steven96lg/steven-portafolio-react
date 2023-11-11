@@ -2,13 +2,14 @@
 #tech-component{
     color: white;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
 }
 
 #tech-component strong:first-child{
     display: block;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 #tech-component .skills-content{
@@ -79,7 +80,7 @@
     #tech-component{
         color: white;
         padding: 8px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 26px;
     }
 
