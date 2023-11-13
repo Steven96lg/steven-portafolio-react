@@ -1,6 +1,7 @@
 
 import PortafolioImage from '../assets/images/portafolio.jpg';
 import BarandalesARH from '../assets/images/arh.jpg';
+import FakeStore from '../assets/images/store.jpg';
 
 export const Projects = [
     {
@@ -49,6 +50,50 @@ export const Projects = [
     },
     {
         id: 2,
+        title: 'FAKE-STORE',
+        img: FakeStore,
+        description: 'En esta practica puse a prueba mis conocimientos adquridos en React, uso de Hooks useContext, useState, useEffect consumiendo la API fakestoreapi.',
+        link: 'https://slg-fakestore.netlify.app',
+        techs: [
+            {
+                id: 1,
+                name: 'JavaScript',
+                icon: 'fab fa-js-square',
+                color: 'rgba(252, 207, 50, 1)',
+                using: true
+            },
+            {
+                id: 2,
+                name: 'React',
+                icon: 'fa-brands fa-react',
+                color: 'rgba(64, 192, 218, 1)',
+                using: true
+            },
+            {
+                id: 3,
+                name: 'Vue',
+                icon: 'fa-brands fa-vuejs',
+                color: 'rgba(82, 186, 107)',
+                using: false
+            },
+            {
+                id: 4,
+                name: 'Bootstrap',
+                icon: 'fa-brands fa-bootstrap',
+                color: 'rgba(112, 79, 200, 1)',
+                using: false
+            },
+            {
+                id: 5,
+                name: 'Responsive Desing',
+                icon: 'fa-solid fa-mobile-screen-button',
+                color: 'rgba(255,255,255,.5)',
+                using: true
+            },
+        ]
+    },
+    {
+        id: 3,
         title: 'Mi Portafolio',
         img: PortafolioImage,
         description: 'Me propuse aprender React JS, asi que con los conocimientos que he adquirido en esta tecnologia decidi aplicarlos en mi portafolio de proyectos, mi portafolio usa la componetizacion, algunos hooks, react-reouter-dom, y otras caracteristicas de la libreria.',
@@ -92,7 +137,7 @@ export const Projects = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: 'Barandales ARH',
         img: BarandalesARH,
         description: 'Proyecto en colaboración con un compañero desarrollador Backend, se realizaron los respectivos requerimientos del cliente, para brindarle un servicío de calidad.',

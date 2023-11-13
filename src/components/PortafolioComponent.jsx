@@ -29,7 +29,7 @@ function Article({title, img, description, link, techs}){
             <strong>{title}</strong>
             <Techs techs={techs}/>
             <div className='article-img-box'>
-                <img src={img} alt={title} />
+                <img src={img} alt={title} style={{objectFit: 'cover'}}/>
             </div>
             <p>
                 { description }
