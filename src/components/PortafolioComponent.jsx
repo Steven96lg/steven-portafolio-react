@@ -4,12 +4,10 @@ import '../css/AboutMeComponent.css'
 import '../css/PortafolioComponent.css'
 import { Projects }  from '../js/projects.js'
 
-
-
 export default function PortafolioComponent(){
 
     const article = Projects.map(art => {
-        return <Article key={art.id} title={art.title} img={art.img} description={art.description} link={art.link} techs={art.techs}/>
+        return <Article key={art.id} title={art.title} img={art.img} description={art.description} link={art.link} techs={art.techs} dw_file={art.dw_file}/>
     })
     return(
         <div id="portafolio-component">
@@ -21,7 +19,7 @@ export default function PortafolioComponent(){
     );
 }
 
-function Article({title, img, description, link, techs}){
+function Article({title, img, description, link, techs, dw_file}){
 
     return(
         <div className='article-box'>
@@ -34,7 +32,7 @@ function Article({title, img, description, link, techs}){
             <p>
                 { description }
             </p>
-            <a href={link} target='_blank'>Visitar Sitio <i className="fas fa-external-link-alt"></i></a>
+            <a href={link} target='_blank' download>{!dw_file ? 'Visitar Sitio' : 'Descargar Archivo'} <i className="fas fa-external-link-alt"></i></a>
         </div>
     )
 }

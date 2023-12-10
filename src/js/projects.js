@@ -2,6 +2,9 @@
 import PortafolioImage from '../assets/images/portafolio.jpg';
 import BarandalesARH from '../assets/images/arh.jpg';
 import FakeStore from '../assets/images/store.jpg';
+import DwVideoTube from '../assets/images/dw-videotube.jpg';
+const dwTube = '/dw-videotube.exe'
+console.log(dwTube)
 
 export const Projects = [
     {
@@ -46,7 +49,8 @@ export const Projects = [
                 color: 'rgba(255,255,255,.5)',
                 using: true
             },
-        ]
+        ],
+        dw_file: false
     },
     {
         id: 2,
@@ -90,10 +94,28 @@ export const Projects = [
                 color: 'rgba(255,255,255,.5)',
                 using: true
             },
-        ]
+        ],
+        dw_file: false
     },
     {
         id: 3,
+        title: 'DW-VideTube',
+        img: DwVideoTube,
+        description: 'Este es un proyecto con fines didacticos que desarrollé en Python usando la biblioteca pytube para descargar videos de YouTube. ¡Siéntete libre de probarlo! Sin embargo, es importante destacar que el propósito es puramente educativo, y el proyecto no respalda la infracción de derechos de autor ni prácticas ilegales. Al descargar o utilizar este software, comprendes y aceptas que no me hago responsable de su uso. ¡Diviértete explorando y aprendiendo!',
+        link: dwTube,
+        techs: [
+            {
+                id: 7,
+                name: 'Python',
+                icon: 'fab fa-python',
+                color: 'rgba(252, 233, 97,.8)',
+                using: true
+            },
+        ],
+        dw_file: true
+    },
+    {
+        id: 4,
         title: 'Mi Portafolio',
         img: PortafolioImage,
         description: 'Me propuse aprender React JS, asi que con los conocimientos que he adquirido en esta tecnologia decidi aplicarlos en mi portafolio de proyectos, mi portafolio usa la componetizacion, algunos hooks, react-reouter-dom, y otras caracteristicas de la libreria.',
@@ -134,10 +156,11 @@ export const Projects = [
                 color: 'rgba(255,255,255,.5)',
                 using: true
             },
-        ]
+        ],
+        dw_file: false
     },
     {
-        id: 4,
+        id: 5,
         title: 'Barandales ARH',
         img: BarandalesARH,
         description: 'Proyecto en colaboración con un compañero desarrollador Backend, se realizaron los respectivos requerimientos del cliente, para brindarle un servicío de calidad.',
@@ -185,6 +208,7 @@ export const Projects = [
                 color: 'rgba(255,255,255,.5)',
                 using: true
             },
-        ]
+        ],
+        dw_file: false
     }
 ]
