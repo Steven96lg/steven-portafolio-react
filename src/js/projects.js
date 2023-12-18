@@ -4,7 +4,6 @@ import BarandalesARH from '../assets/images/arh.jpg';
 import FakeStore from '../assets/images/store.jpg';
 import DwVideoTube from '../assets/images/dw-videotube.jpg';
 const dwTube = '/dw-videotube.exe'
-console.log(dwTube)
 
 export const Projects = [
     {
@@ -119,7 +118,7 @@ export const Projects = [
         title: 'Mi Portafolio',
         img: PortafolioImage,
         description: 'Me propuse aprender React JS, asi que con los conocimientos que he adquirido en esta tecnologia decidi aplicarlos en mi portafolio de proyectos, mi portafolio usa la componetizacion, algunos hooks, react-reouter-dom, y otras caracteristicas de la libreria.',
-        link: '#',
+        link: 'https://steven-portafolio.netlify.app/',
         techs: [
             {
                 id: 1,

@@ -1,47 +1,61 @@
 
+import { Icon } from '@iconify-icon/react';
 import '../css/TecnologysComponent.css'
 
 export default function TecnologysComponent(){
+
+    const iconStyle = {
+        fontSize: '60px',
+        marginBottom: '10px'
+    }
 
     return(
         <div id='tech-component'>
             <strong>Mis Herramientas y Tecnologias.</strong>
             <div className='skills-content'>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-html5 fs"></i>
+                    <Icon icon="skill-icons:html" style={iconStyle}/>
                     <strong>HTML5</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-css3 fs"></i>
+                    <Icon icon="skill-icons:css" style={iconStyle}/>
                     <strong>CSS3</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-square-js fs"></i>
+                    <Icon icon="skill-icons:javascript" style={iconStyle}/>
                     <strong>JavaScript</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-bootstrap fs"></i>
+                    <Icon icon="devicon:bootstrap" style={iconStyle}/>
                     <strong>BootStrap</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-vuejs fs"></i>                  
+                    <Icon icon="logos:vue" style={iconStyle}/>                  
                     <strong>Vue3</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-react fs"></i>
+                    <Icon icon="logos:react" style={iconStyle}/>
                     <strong>React JS</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-git-alt fs"></i>
+                    <Icon icon="logos:python" style={iconStyle}/>
+                    <strong>Python</strong>
+                </div>
+                <div className='skills-box'>
+                    <Icon icon="vscode-icons:file-type-jest" style={iconStyle}/>
+                    <strong>Jest JS</strong>
+                </div>
+                <div className='skills-box'>
+                    <Icon icon="logos:git-icon" style={iconStyle}/>
                     <strong>Git</strong>
                 </div>
                 <div className='skills-box'>
-                    <i className="fa-brands fa-github fs"></i>
+                    <Icon icon="logos:github-octocat" style={iconStyle}/>
                     <strong>GitHub</strong>
                 </div>
                 <div className='skills-box'>
-                <i className="fa-solid fa-mobile-screen-button fs"></i>
-                    <strong>Diseño Responsivo</strong>
+                    <Icon icon="flat-ui:responsive" style={iconStyle}/>
+                    <strong>Responsive</strong>
                 </div>
             </div>
         </div>
