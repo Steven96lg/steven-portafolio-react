@@ -19,27 +19,39 @@
     padding-left: 15px;
 }
 
-#info-component h2{
-    font-size: 40px;
+#info-component h1{
+    font-size: 44px;
     font-weight: 800;
     margin-bottom: 10px;
+    background: linear-gradient(to right, #E84130, #9223B9);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+#info-component strong{
+    font-size: 18px;
+    color: #F3A750;
+}
 
 #info-component p{
     color: gray;  
     margin-top: 10px;
 }
 
-#info-component a{
-    color: gray;
+#info-component .links-component a{
     text-decoration: none;
     font-size: 18px;
     transition: color 500ms;
+    color: gray;
 }
-
-#info-component a:hover{
+#info-component .links-component a:first-child:hover{
+    color: #0A66C2;
+}
+#info-component .links-component a:nth-child(2):hover{
     color: white;
+}
+#info-component .links-component a:nth-child(3):hover{
+    color: #25D366;
 }
 
 #info-component .links-component .contact-btn{

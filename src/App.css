@@ -6,6 +6,30 @@
     padding: 50px 0px 0px;
 }
 
+#app .gradient-bg{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    top: 40;
+    left: 50px;
+    opacity: .5;
+    filter: blur(90px);
+}
+
+#app .gradient-bg2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #F35F50;
+    top: 400px;
+    right: 50px;
+    opacity: .5;
+    filter: blur(90px);
+}
+
 @media (max-width: 415px){
     #app{
         width: 100%;
