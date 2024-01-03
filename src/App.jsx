@@ -13,6 +13,7 @@ function App() {
     <div id="app">
       <div className="gradient-bg"></div>
       <div className="gradient-bg2"></div>
+      <div className="gradient-bg3"></div>
       <HeaderComponent />
       <InfoComponent />
       <MenuComponent />
