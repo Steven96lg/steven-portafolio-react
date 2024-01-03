@@ -30,18 +30,17 @@
     filter: blur(90px);
 }
 
-#app .gradient-bg3 {
+#app .gradient-bg3{
     position: absolute;
-    width: 250px;
+    width: 350px;
     height: 250px;
     border-radius: 50%;
-    top: 800px;
-    left: 10px;
-    opacity: 0.5;
+    background-color: #49B5D5;
+    top: 200px;
+    left: 250px;
+    opacity: .2;
     filter: blur(90px);
-    background: linear-gradient(to left, #3498db, #49D54B);
 }
-
 
 @media (max-width: 415px){
     #app{
