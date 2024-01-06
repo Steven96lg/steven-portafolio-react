@@ -3,7 +3,7 @@
     padding: 0px 20px 20px;
     font-family: 'Raleway', sans-serif;
     color: white;
-    z-index: 2;
+    z-index: 10;
 }
 
 #info-component strong{
