@@ -28,6 +28,7 @@
     right: 50px;
     opacity: .5;
     filter: blur(90px);
+    z-index: -1;
 }
 
 #app .gradient-bg3{
@@ -47,5 +48,8 @@
         width: 100%;
         margin: 0px;
         padding: 0px;
+    }
+    #app .gradient-bg2, .gradient-bg3{
+        display: none;
     }
 }
