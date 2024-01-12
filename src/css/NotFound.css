@@ -1,0 +1,19 @@
+
+.not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.not-found .error-found{
+    display: flex;
+    align-items: center;
+    & h2{
+        font-size: 70px;
+        font-weight: 900;
+        font-family: 'Raleway', sans-serif;
+    }
+}
