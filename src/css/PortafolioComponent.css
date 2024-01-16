@@ -14,13 +14,15 @@
     margin-top: 30px;
 }
 
+/*Aqui tengo que editar para las animaciones*/
 .article-box{
     width: 100%;
     height: auto;
     cursor: pointer;
     border-radius: 5px;
-    padding: 30px;
     transition: background 500ms;
+    padding: 30px;
+    opacity: 1;
     & strong{
         display: block;
         margin: 0px 0px 20px;
@@ -50,6 +52,10 @@
         border-radius: 30px;
         cursor: pointer;
     }
+}
+
+.visible{
+    opacity: 1;
 }
 
 .article-box:hover{
