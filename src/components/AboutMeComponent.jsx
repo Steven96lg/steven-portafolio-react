@@ -11,9 +11,9 @@ export default function AboutMeComponent(){
             <div className='description-component'>
                 <MyDescComponent />
             </div>
-            <div className='description-component'>
+            {/*<div className='description-component'>
                 <IronbitComponent />
-            </div>
+            </div>*/}
             <div className='description-component'>
                 <EgamComponent />
             </div>
