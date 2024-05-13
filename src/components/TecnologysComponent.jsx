@@ -38,8 +38,16 @@ export default function TecnologysComponent(){
                     <strong>React JS</strong>
                 </div>
                 <div className='skills-box'>
+                    <Icon icon="logos:nodejs-icon" style={iconStyle} />
+                    <strong>Node JS</strong>
+                </div>
+                <div className='skills-box'>
                     <Icon icon="logos:python" style={iconStyle}/>
                     <strong>Python</strong>
+                </div>
+                <div className='skills-box'>
+                    <Icon icon="logos:mysql" style={iconStyle}/>
+                    <strong>MySQL</strong>
                 </div>
                 <div className='skills-box'>
                     <Icon icon="vscode-icons:file-type-jest" style={iconStyle}/>
