@@ -1,16 +1,41 @@
 
-import { Link } from 'react-router-dom';
+
 import '../css/MenuComponent.css'
+import { useState } from 'react';
+import LinkComponent from './LinkComponent';
 
 export default function MenuComponent(){
+
+    const [activeLink, setActiveLink] = useState("/");
+
+    const handleSetActiveLink = (link) => {
+        setActiveLink(link);
+    };
 
     return(
         <div id="menu-component">
             <nav>
-                <ul>
-                    <li><Link to="/">Sobre mi</Link></li>
-                    <li><Link to="/techs">Tecnologias</Link></li>
-                    <li><Link to="/portafolio">Portafolio</Link></li>
+                <ul>      
+                    <li onClick={() => handleSetActiveLink("/")}>
+                        <LinkComponent
+                             to="/" 
+                             active={activeLink === "/" ? "active" : ""}
+                             
+                             >Sobre mi
+                        </LinkComponent>
+                    </li>
+                    <li onClick={() => handleSetActiveLink("/techs")}>
+                        <LinkComponent 
+                            active={activeLink === "/techs" ? "active" : ""}
+                            >Tecnologias
+                        </LinkComponent>
+                    </li>
+                    <li onClick={() => handleSetActiveLink("/portafolio")}>
+                        <LinkComponent
+                            active={activeLink === "/portafolio" ? "active" : ""}
+                            >Portafolio
+                        </LinkComponent>
+                    </li>
                 </ul>
             </nav>
         </div>
