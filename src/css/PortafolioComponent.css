@@ -1,14 +1,55 @@
 
-#portafolio-component{
-    width: 100%;
-    height: auto;
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 26px;
-    font-family: 'Raleway', sans-serif;
+.port.dark{
+    & #portafolio-component{
+        width: 100%;
+        height: auto;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 26px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .article-box:hover{
+        background: rgba(255,255,255,.2);
+    }
+    & a{
+        font-size: 16px;
+        background: white;
+        text-decoration: none;
+        color: black;
+        padding: 5px 15px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
 }
+
+.port.light{
+    & #portafolio-component{
+        width: 100%;
+        height: auto;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 26px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .article-box:hover{
+        background: rgba(0,0,0,.4);
+    }
+    & a{
+        font-size: 16px;
+        background: black;
+        text-decoration: none;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
+
+
 
 .box-articles{
     margin-top: 30px;
@@ -58,9 +99,6 @@
     opacity: 1;
 }
 
-.article-box:hover{
-    background: rgba(255,255,255,.2);
-}
 
 .techs{
     display: flex;

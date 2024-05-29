@@ -1,19 +1,23 @@
 
-import { useEffect, useState, useRef } from 'react';
-import UserArticle from './UserArticle';
+import { useEffect, useState, useRef, useContext } from 'react';
 import '../css/AboutMeComponent.css';
 import '../css/PortafolioComponent.css';
 import { Projects } from '../js/projects.js';
+import { ThemeContext } from "./ThemeContext.jsx"
 
 export default function PortafolioComponent() {
   const article = Projects.map((art) => {
     return <Article key={art.id} title={art.title} img={art.img} description={art.description} link={art.link} techs={art.techs} dw_file={art.dw_file} />;
   });
 
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div id="portafolio-component">
-      <strong>Algunos de mis Proyectos.</strong>
-      <div className="box-articles">{article}</div>
+    <div className={`port ${theme}`}>
+      <div id="portafolio-component">
+        <strong>Algunos de mis Proyectos.</strong>
+        <div className="box-articles">{article}</div>
+      </div>
     </div>
   );
 }
@@ -47,7 +51,7 @@ function Article({ title, img, description, link, techs, dw_file }) {
   
   return (
     <div className="article-box" ref={articleRef} style={animationStyle}>
-      <UserArticle />
+      
       <strong>{title}</strong>
       <Techs techs={techs} />
       <div className="article-img-box">

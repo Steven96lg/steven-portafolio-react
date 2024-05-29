@@ -4,10 +4,16 @@ import EgamComponent  from './experience/EgamComponent';
 import IronbitComponent from './experience/IronbitComponent';
 import '../css/AboutMeComponent.css'
 
+import { ThemeContext} from "../components/ThemeContext.jsx"
+import { useContext } from 'react';
+
 export default function AboutMeComponent(){
 
+    const { theme } = useContext(ThemeContext);
+
     return(
-        <div id="about-me-component">
+       <div className={`about ${theme}`}>
+         <div id="about-me-component">
             <div className='description-component'>
                 <MyDescComponent />
             </div>
@@ -18,6 +24,7 @@ export default function AboutMeComponent(){
                 <EgamComponent />
             </div>
         </div>
+       </div>
     );
 }
 

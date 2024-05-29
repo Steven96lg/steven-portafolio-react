@@ -1,10 +1,23 @@
 
-#tech-component{
-    color: white;
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
+.tech.dark{
+    & #tech-component{
+        color: white;
+        padding: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+    }
 }
+
+.tech.light{
+    & #tech-component{
+        color: black;
+        padding: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+    }
+}
+
+
 
 #tech-component strong:first-child{
     display: block;

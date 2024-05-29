@@ -1,4 +1,35 @@
 
+.info.dark{
+    & #info-component .links-component a{
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 500ms;
+        color: gray;
+    }
+    & #info-component p{
+        color: gray;  
+        margin-top: 10px;
+    }
+    & #info-component .links-component a:nth-child(2):hover{
+        color: white;
+    }
+}
+.info.light{
+    & #info-component .links-component a{
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 500ms;
+        color: black;
+    }
+    & #info-component p{
+        color: black;  
+        margin-top: 10px;
+    }
+    & #info-component .links-component a:nth-child(2):hover{
+        color: gray;
+    }
+}
+
 #info-component{
     padding: 0px 20px 20px;
     font-family: 'Raleway', sans-serif;

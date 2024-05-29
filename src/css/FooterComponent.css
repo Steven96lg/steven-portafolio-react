@@ -1,8 +1,19 @@
 
-#footer-component{
+.footer.dark{
     width: 100%;
     padding: 20px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer.light{
+    width: 100%;
+    padding: 20px;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
