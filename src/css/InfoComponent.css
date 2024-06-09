@@ -51,14 +51,6 @@
     padding-left: 15px;
 }
 
-#info-component h1{
-    font-size: 44px;
-    font-weight: 800;
-    margin-bottom: 10px;
-    background: linear-gradient(to right, #E84130, #9223B9);
-    -webkit-background-clip: text;
-    color: transparent;
-}
 
 #info-component strong{
     font-size: 18px;

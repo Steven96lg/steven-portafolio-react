@@ -1,4 +1,5 @@
 
+import { GradientTextComponent } from './GradientTextComponent.jsx';
 import '../css/InfoComponent.css';
 import { ThemeContext } from "../components/ThemeContext.jsx"
 import { useContext } from 'react';
@@ -10,7 +11,7 @@ export default function InfoComponent(){
     return(
         <div className={`info ${theme}`}>
             <div id="info-component">
-                <h1>Steven Layna</h1>
+                <GradientTextComponent text="Steven Layna" size="L"/>
                 <strong>Desarrollador Front-end &#128187;</strong>
                 <div className="links-component">
                     <a href="https://www.linkedin.com/in/steven-layna-gonzalez-6aa96319b/" target='_blank'><i className="fas fa-link"></i> <span>Linkedin</span> <i className="fab fa-linkedin icons"></i></a>

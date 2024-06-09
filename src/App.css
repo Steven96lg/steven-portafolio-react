@@ -11,7 +11,7 @@
     width: 50%;
     height: auto;
     margin: 0px auto;
-    padding: 50px 0px 0px;
+    padding: 30px 0px 0px;
     z-index: 1;
     position: relative;
     
@@ -76,5 +76,19 @@
     }
     #app .gradient-bg2, .gradient-bg3{
         display: none;
+    }
+
+    .theme-component{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        & button{
+            font-size: 28px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
     }
 }

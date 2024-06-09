@@ -1,7 +1,6 @@
 
-import MyDescComponent from './experience/MyDescComponent';
-import EgamComponent  from './experience/EgamComponent';
-import IronbitComponent from './experience/IronbitComponent';
+import UserArticle from './UserArticle.jsx';
+import  { experience } from "../utils/experience.js"
 import '../css/AboutMeComponent.css'
 
 import { ThemeContext} from "../components/ThemeContext.jsx"
@@ -14,15 +13,18 @@ export default function AboutMeComponent(){
     return(
        <div className={`about ${theme}`}>
          <div id="about-me-component">
-            <div className='description-component'>
-                <MyDescComponent />
-            </div>
-            {/*<div className='description-component'>
-                <IronbitComponent />
-            </div>*/}
-            <div className='description-component'>
-                <EgamComponent />
-            </div>
+            {
+                experience.map(exp => (
+                    <div key={exp.title} className='description-component'>
+                        <UserArticle />
+                        <strong>{exp.title}</strong>
+                        <div className='img-exp'>
+                            {exp.img !== null ? <img src={exp.img}/> : ""}
+                        </div>
+                        <p>{exp.description}</p>
+                    </div>
+                ))
+            }
         </div>
        </div>
     );

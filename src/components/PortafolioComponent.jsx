@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef, useContext } from 'react';
 import '../css/AboutMeComponent.css';
 import '../css/PortafolioComponent.css';
-import { Projects } from '../js/projects.js';
+import { Projects } from '../utils/projects.js';
 import { ThemeContext } from "./ThemeContext.jsx"
 
 export default function PortafolioComponent() {
