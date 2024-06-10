@@ -1,32 +1,47 @@
-
+import React, { useContext, useEffect, useState } from 'react';
 import UserArticle from './UserArticle.jsx';
-import  { experience } from "../utils/experience.js"
-import '../css/AboutMeComponent.css'
+import '../css/AboutMeComponent.css';
+import { ThemeContext } from "../components/ThemeContext.jsx";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
-import { ThemeContext} from "../components/ThemeContext.jsx"
-import { useContext } from 'react';
-
-export default function AboutMeComponent(){
-
+export default function AboutMeComponent() {
     const { theme } = useContext(ThemeContext);
 
-    return(
-       <div className={`about ${theme}`}>
-         <div id="about-me-component">
-            {
-                experience.map(exp => (
-                    <div key={exp.title} className='description-component'>
-                        <UserArticle />
-                        <strong>{exp.title}</strong>
-                        <div className='img-exp'>
-                            {exp.img !== null ? <img src={exp.img}/> : ""}
+    const [markdownContents, setMarkdownContents] = useState([]);
+
+    useEffect(() => {
+        const markdownFiles = [
+            "MD/welcome.md",
+            'MD/egam.md'
+        ];
+
+        const fetchMarkdown = async () => {
+            const promises = markdownFiles.map(file => 
+                fetch(file)
+                    .then(response => response.text())
+            );
+            const contents = await Promise.all(promises);
+            setMarkdownContents(contents);
+        };
+
+        fetchMarkdown();
+    }, []);
+    
+    return (
+        <div className={`about ${theme}`}>
+            <div id="about-me-component">
+                {
+                    markdownContents.map((content, index) => (
+                        <div key={index} className='description-component'>
+                            <UserArticle />
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                {content}
+                            </ReactMarkdown>
                         </div>
-                        <p>{exp.description}</p>
-                    </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </div>
-       </div>
     );
 }
-
